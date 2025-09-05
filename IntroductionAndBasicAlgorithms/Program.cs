@@ -15,10 +15,30 @@ public class Program
         {
             Console.WriteLine(t.Greetings != null && t.IsPalindrome(t.Greetings));
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             Console.WriteLine($"Error {ex.Message}");
         }
+
+        LinkedList head = new();
+
+        head.Insert("Sep Bayot");
+        head.Insert("Clarence");
+        head.Insert("Mark John");
+        head.Insert("Ivan Kanban");
+        head.Display();
+        head.Reverse();
+        head.Display();
+        head.Check();
+
+
+        // BST Root = new BST();
+
+            // Root.Insert("I love you");
+            // Root.Insert("I love you not");
+            // Root.Insert("I love you please");
+            // Root.Insert("I love you beggin");
+            // Root.InOrder();
     }
 }
 
